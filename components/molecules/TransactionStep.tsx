@@ -1,5 +1,5 @@
 import React from 'react'
-import TransactionStepItem from './TransactionStepItem'
+import TransactionStepItem from '../organism/TransactionStep/TransactionStepItem'
 
 function TransactionStep() {
   return (
