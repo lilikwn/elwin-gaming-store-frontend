@@ -1,12 +1,12 @@
 import OverviewContent from '@/components/organism/OverviewContent/OverviewContent'
-import SidebarOverview from '@/components/organism/SidebarOverview/SidebarOverview'
+import Sidebar from '@/components/organism/Sidebar/Sidebar'
 import React from 'react'
 
 function MemberOverview() {
   return (
     // <!-- Overview -->
     <section className="overview overflow-auto">
-        <SidebarOverview />
+        <Sidebar />
         <OverviewContent />
     </section>
   )

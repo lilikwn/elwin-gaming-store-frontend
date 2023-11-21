@@ -26,7 +26,7 @@ function SidebarMenu({title, icon, href= '/'}: SidebarMenuProps) {
     <div className={`item mb-30 ${isActive}`}>
         <Image className="me-3" alt={icon} src={`/assets/icon/${icon}.svg`} width={25} height={25} />
         <p className="item-title m-0">
-            <Link href="" className="text-lg text-decoration-none">{title}</Link>
+            <Link href={href} className="text-lg text-decoration-none">{title}</Link>
         </p>
     </div>
   )

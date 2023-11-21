@@ -3,7 +3,7 @@ import SidebarProfile from './SidebarProfile'
 import SidebarMenu from './SidebarMenu'
 import SidebarFooter from './SidebarFooter'
 
-function SidebarOverview() {
+function Sidebar() {
   return (
     <section className="sidebar">
         <div className="content pt-50 pb-30 ps-30">
@@ -23,4 +23,4 @@ function SidebarOverview() {
   )
 }
 
-export default SidebarOverview
+export default Sidebar
