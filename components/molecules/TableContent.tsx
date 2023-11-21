@@ -1,5 +1,6 @@
 import { IDRCurrencyFormatter } from "@/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TableContentProps {
     gameImage: string;
@@ -7,11 +8,12 @@ interface TableContentProps {
     category: 'Desktop' | 'Mobile'
     item: number;
     price: number;
-    status: 'Pending' | 'Success' | 'Failed'
+    status: 'Pending' | 'Success' | 'Failed' ;
+    details?: string;
 }
 
 function TableContent(props: TableContentProps) {
-    const {gameImage, gameTitle, category, item, price, status} = props;
+    const {gameImage, gameTitle, category, item, price, status, details} = props;
   return (
     <tr className="align-middle">
         <th scope="row">
@@ -36,6 +38,14 @@ function TableContent(props: TableContentProps) {
                     {status}</p>
             </div>
         </td>
+        {
+            details && (
+                <td>
+                    <Link href="../member/transactions-detail.html"
+                        className="btn btn-status rounded-pill text-sm">Details</Link>
+                </td>
+            )
+        }
     </tr>
   )
 }

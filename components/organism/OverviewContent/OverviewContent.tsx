@@ -1,5 +1,5 @@
 import CategoryCard from "./CategoryCard"
-import TableContent from "./TableContent"
+import TableContent from "@/components/molecules/TableContent"
 
 function OverviewContent() {
   return (
