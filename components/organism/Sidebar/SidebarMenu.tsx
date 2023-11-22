@@ -21,7 +21,7 @@ interface SidebarMenuProps {
 
 function SidebarMenu({title, icon, href= '/'}: SidebarMenuProps) {
     const pathName = usePathname();
-    const isActive = pathName === href ? 'active' : '';
+    const isActive = pathName.includes(href) && href !== '/' ? 'active' : '';
   return (
     <div className={`item mb-30 ${isActive}`}>
         <Image className="me-3" alt={icon} src={`/assets/icon/${icon}.svg`} width={25} height={25} />
